@@ -13,4 +13,4 @@ DEFAULT_CUKE_OPTS = {
   feature_sets: ['test/features'],
   notification: true
 }
-log_output('Cucumber', "./#{DEFAULT_CUKE_RESULTS}", :info, :failure, :success)
+log_output('Cucumber', "#{DEFAULT_CUKE_RESULTS}", :info, :failure, :success)
