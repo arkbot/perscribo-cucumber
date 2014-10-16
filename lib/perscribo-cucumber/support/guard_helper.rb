@@ -1,4 +1,4 @@
-DEFAULT_CUKE_RESULTS = "tmp/perscribo_cucumber.log"
+DEFAULT_CUKE_RESULTS = "#{Dir.pwd}/tmp/perscribo_cucumber.log"
 DEFAULT_CUKE_CLI = [
   '--color',
   '--strict',
