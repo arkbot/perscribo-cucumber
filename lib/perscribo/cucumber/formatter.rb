@@ -7,8 +7,8 @@ module Perscribo
     class Formatter < ::Cucumber::Formatter::Progress
       def initialize(*args)
         @delayed_messages = []
-        Support::Core::IO.hook!(@io, :info)
         super(*args)
+        @io = Support::Core::IO.hook!(@io, :info)
       end
 
       def progress(status)
